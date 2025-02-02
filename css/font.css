@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'bone';
+    src: url('./Bone-Regular.otf') format('woff2');
+    /* 추가적으로 필요한 포맷들을 지정할 수 있습니다. */
+}
+
+.bone {
+    font-family: 'bone';
+}
+
+@font-face {
+    font-family: 'koreanFont';
+    src: url('./koreanFont.ttf') format('woff2');
+    /* 추가적으로 필요한 포맷들을 지정할 수 있습니다. */
+}
+
+.koreanFont {
+    font-family: 'koreanFont';
+}
+

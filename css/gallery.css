@@ -1,0 +1,107 @@
+/* 이서윤체 폰트 적용을 위한 코드 */
+@font-face {
+font-family: "LeeSeoyun";
+src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+    format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+/* body태그 자체에 css 요소 부여 */
+body {
+font-family: "LeeSeoyun";
+margin: 0;
+/* display: flex; */
+justify-content: center;
+background-image: url("../img/background.png");
+}
+
+.bodycontainer {
+    display: flex;
+}
+.container {
+    width: 450px;
+    background-color: #333a35;
+    height: 100%;
+}
+
+.photos {
+margin-top: 20px;
+}
+.resized-image {
+  width: 30%; /* 원하는 가로 크기로 조절 */
+  height: auto; /* 세로 크기는 가로 크기에 비례하도록 자동 조절 */
+}
+.photo-frame {
+  width: 100%; /* 프레임의 너비를 부모 요소에 맞춤 */
+  padding-top: 60%; /* 가로 16 : 세로 9 비율 유지 */
+  position: relative; /* 자식 요소를 위한 포지셔닝 컨텍스트 설정 */
+  background-color: white; /* 배경색 설정 */
+  margin-bottom: 20px; /* 여백 설정 */
+}
+
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.f-title {
+font-size: 25px;
+font-weight: 900;
+color: white;
+}
+.f-date {
+font-size: 15px;
+font-weight: 500;
+color: white;
+}
+
+.photos img {
+  position: absolute; /* 절대 위치 설정 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 이미지 너비를 프레임 너비에 맞춤 */
+  height: 100%; /* 이미지 높이를 프레임 높이에 맞춤 */
+  object-fit: cover; /* 프레임을 채우도록 이미지 조정 (일부가 잘릴 수 있음) */
+  }
+
+
+  .photos2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .photos2 .row {
+    display: flex;
+    width: calc(50% - 5px); /* 2열로 나누고 간격을 조절 */
+    margin-bottom: 10px; /* 각 행 간의 여백 조절 */
+  }
+  
+  .photos2 .photo-frame {
+    flex-basis: calc(50% - 10px); /* 각 프레임의 기본 너비 설정 */
+    margin: 5px; /* 여백 추가 */
+    position: relative; /* 자식 요소를 위한 포지셔닝 컨텍스트 설정 */
+    padding-top: 30%; /* 높이를 너비의 비율로 설정 */
+    background-color: white; /* 배경색 설정 */
+  }
+  
+  .photos2 img {
+    position: absolute; /* 절대 위치 설정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 이미지 너비를 프레임 너비에 맞춤 */
+    height: 100%; /* 이미지 높이를 프레임 높이에 맞춤 */
+    object-fit: cover; /* 프레임을 채우도록 이미지 조정 (일부가 잘릴 수 있음) */
+  }
+  
+  .container2 {
+    width: 390px;
+    height: 100%;
+    margin-right: 150px;
+}
+
+h2, h4 {
+    text-align: center;
+}
